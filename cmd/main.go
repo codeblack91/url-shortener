@@ -1,13 +1,12 @@
 package main
 
 import (
+	_ "github.com/mattn/go-sqlite3"
 	"golang.org/x/exp/slog"
 	"os"
 	"url-shortener/internal/config"
 	"url-shortener/internal/lib/logger/sl"
-	sqlite "url-shortener/internal/storage"
-
-	_ "github.com/mattn/go-sqlite3"
+	"url-shortener/internal/storage/sqlite"
 )
 
 const (
